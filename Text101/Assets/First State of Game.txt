@@ -1,0 +1,5 @@
+﻿First state of game.
+
+Choices:
+1. Click start button
+2. Quit
