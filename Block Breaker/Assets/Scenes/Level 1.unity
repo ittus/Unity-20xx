@@ -386,13 +386,14 @@ GameObject:
   m_Component:
   - component: {fileID: 546292426}
   - component: {fileID: 546292427}
+  - component: {fileID: 546292428}
   m_Layer: 5
   m_Name: Lose Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &546292426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -420,7 +421,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 7.8877335, y: 0}
@@ -436,6 +437,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.77547, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &546292428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546292425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d09df58777f4f838a20b561b5c7e36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &760927965
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +590,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 765945672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -624,7 +636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &855551363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1162,6 +1174,7 @@ GameObject:
   - component: {fileID: 2143461964}
   - component: {fileID: 2143461963}
   - component: {fileID: 2143461965}
+  - component: {fileID: 2143461966}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -1222,7 +1235,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143461962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.96, y: 0.37225342, z: 0}
+  m_LocalPosition: {x: 6.35, y: 0.37225342, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1260,3 +1273,15 @@ PolygonCollider2D:
       - {x: 1, y: -0.25}
       - {x: 1, y: 0.04704246}
       - {x: 0.8292885, y: 0.11735496}
+--- !u!114 &2143461966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143461962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c6231bc0e6f4c969fc8ccb3ad87429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWidthInUnits: 16
