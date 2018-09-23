@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 414728187}
   - component: {fileID: 414728189}
   - component: {fileID: 414728190}
+  - component: {fileID: 414728191}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -259,7 +260,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 414728186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.81, y: 6.52, z: 0}
+  m_LocalPosition: {x: 4.15, y: 0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -300,6 +301,18 @@ CircleCollider2D:
   m_Offset: {x: 0.011518121, y: 0.011518225}
   serializedVersion: 2
   m_Radius: 0.17774904
+--- !u!114 &414728191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 414728186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5425473705f994d2aaa18f7faafe8e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paddle1: {fileID: 2143461966}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,11 +886,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1235,7 +1248,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143461962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.35, y: 0.37225342, z: 0}
+  m_LocalPosition: {x: 4.17, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1285,3 +1298,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenWidthInUnits: 16
+  minX: 0
+  maxX: 15
